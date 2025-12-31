@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Todo List</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app">
+    <header>
+      <h1>TODO LIST</h1>
+
+      <div class="controls">
+        <div class="search"> 
+          <input type="text" id="search" placeholder="Note |" />
+          <span class="search-icon">🔍</span>
+
+        </div>
+       
+        <div class="filtri">
+            <select id="filter">
+            <option value="all">ALL</option>
+            <option value="complete">Complete</option>
+            <option value="incomplete">Incomplete</option>
+          </select>
+        </div>
+        <button id="themeToggle">☀️</button>
+        
+      </div>
+      
+    </header>
+
+    <main>
+      <ul id="todoList"></ul>
+
+      <div id="emptyState" class="empty">
+        <img src="dabneulikaci.png" alt="No todos" />
+        <p>Empty...</p>
+      </div>
+    </main>
+
+    <button class="add-btn" id="addBtn">+</button>
+  </div>
+
+  <div class="modal-overlay" id="modal">
+    <div class="modal">
+      <h2>NEW NOTE</h2>
+      <input type="text" id="noteInput" placeholder="Input your note..." />
+
+      <div class="modal-actions">
+        <button id="cancelBtn">CANCEL</button>
+        <button id="applyBtn">APPLY</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
